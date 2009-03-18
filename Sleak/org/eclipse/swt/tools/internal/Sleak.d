@@ -32,7 +32,6 @@ import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.MessageBox;
 
 import java.lang.all;
-import tango.text.convert.Format;
 
 public class Sleak {
     Display display;
