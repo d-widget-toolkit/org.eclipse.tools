@@ -233,8 +233,8 @@ void refreshObject () {
     if (index is -1) return;
     if (check.getSelection ()) {
         char[] txt = "Stacktrace info (if missing you need stacktrace support for your program):\n";
-        foreach( line; errors[index].info ){
-            txt ~= line ~ \n;
+        foreach( frame; errors[index].info ){
+            txt ~= Format("{}:{}\n", frame.file, frame.line );
         }
         text.setText (txt);
         text.setVisible (true);
